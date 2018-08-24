@@ -1,0 +1,13 @@
+<h1>Pages#landing</h1>
+<p>Find me in app/views/pages/landing.html.erb</p>
+
+<p>   </p>
+  <table>
+    <thead>
+      <tr>
+        <% @students.each do |student| %>
+          <th><%= student.name %></th>
+        <% end %>
+      </tr>
+    </thead>
+  </table>
