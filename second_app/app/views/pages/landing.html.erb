@@ -1,13 +1,22 @@
 <h1>Pages#landing</h1>
 <p>Find me in app/views/pages/landing.html.erb</p>
 
-<p>   </p>
-  <table>
-    <thead>
-      <tr>
-        <% @students.each do |student| %>
-          <th><%= student.name %></th>
-        <% end %>
-      </tr>
-    </thead>
-  </table>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>eMail</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @students.each do |e| %>
+      <div class="well">
+        <tr>
+          <td><%= e.name %></td>
+          <td><%= e.email %></td>
+        </tr>
+      </div>
+    <% end %>
+  </tbody>
+</table>
